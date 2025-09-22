@@ -3,26 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Feliz Día de las Flores Amarillas</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+  <audio id="bg-music" src="musica.mp3" autoplay loop></audio>
+  <div class="petals">
+    <!-- Pétalos flotantes animados -->
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+  </div>
   <div class="container">
-    <h1>🌼 Feliz Día de las Flores Amarillas, mi amor 🌼</h1>
-    <p>Hoy quiero recordarte lo especial que eres para mí y regalarte estas flores virtuales. Gracias por iluminar mi vida 💛</p>
-    <button id="surpriseBtn">Haz clic para tu sorpresa</button>
-    <div id="surprise" class="hidden">
-      <h2>Te amo muchísimo 💛</h2>
-      <p>Eres la razón de mi felicidad. ¡Gracias por existir!</p>
+    <h1>🌼 Día de las flores amarillas 🌼</h1>
+    <svg class="tulip-svg" viewBox="0 0 80 200" width="120" height="300">
+      <!-- Tallo -->
+      <rect x="36" y="80" width="8" height="110" rx="4" fill="#7dbf2b"/>
+      <!-- Hojas -->
+      <ellipse cx="24" cy="140" rx="13" ry="38" fill="#99d164" transform="rotate(-18 24 140)"/>
+      <ellipse cx="56" cy="170" rx="13" ry="38" fill="#99d164" transform="rotate(18 56 170)"/>
+      <!-- Flor -->
+      <ellipse cx="40" cy="70" rx="32" ry="38" fill="#ffe066"/>
+      <ellipse cx="23" cy="56" rx="13" ry="24" fill="#ffe066"/>
+      <ellipse cx="57" cy="56" rx="13" ry="24" fill="#ffe066"/>
+      <ellipse cx="40" cy="53" rx="15" ry="20" fill="#ffe066"/>
+      <ellipse cx="40" cy="32" rx="10" ry="12" fill="#ffe066"/>
+      <!-- Detalles del tulipán -->
+      <ellipse cx="29" cy="62" rx="3" ry="7" fill="#ffd700"/>
+      <ellipse cx="51" cy="62" rx="3" ry="7" fill="#ffd700"/>
+    </svg>
+    <div class="mensaje">
+      <p>Eres mi razón de sonreír cada día.<br>
+      Te regalo este tulipán amarillo,<br>
+      símbolo de mi amor y felicidad por estar contigo.<br>
+      ¡Feliz día de las flores amarillas, mi vida! 💛</p>
     </div>
-    <div class="flowers">
-      <!-- Flores animadas -->
-      <div class="flower"></div>
-      <div class="flower"></div>
-      <div class="flower"></div>
-      <div class="flower"></div>
-      <div class="flower"></div>
+    <button id="surpriseBtn">Haz clic para tu sorpresa</button>
+    <div id="surprise" class="hidden carta">
+      <h2>Te amo 💛</h2>
+      <p>
+        Gracias por ser mi sol, mi alegría y mi mejor compañía.<br>
+        Cada día a tu lado es una bendición. <br>
+        ¡Siempre juntos!
+      </p>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="Script.js"></script>
 </body>
 </html>
