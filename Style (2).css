@@ -1,0 +1,82 @@
+body {
+  background: #fffbe7;
+  font-family: 'Segoe Script', cursive;
+  color: #c77400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  background: #fff4c2;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(199, 116, 0, 0.1);
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+.flowers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.flower {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #ffe066 60%, #e1ad01 100%);
+  border-radius: 50%;
+  position: relative;
+  animation: float 3s infinite ease-in-out alternate;
+}
+.flower::before, .flower::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+.flower::before {
+  width: 90px;
+  height: 30px;
+  background: #ffe066;
+  top: 15px; left: -15px;
+  z-index: -1;
+}
+.flower::after {
+  width: 30px;
+  height: 90px;
+  background: #ffe066;
+  top: -15px; left: 15px;
+  z-index: -1;
+}
+@keyframes float {
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-20px);}
+}
+button {
+  background: #ffe066;
+  color: #c77400;
+  border: none;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #ffd000;
+}
+.hidden {
+  display: none;
+}
+#surprise {
+  margin-top: 24px;
+  background: #fffbe7;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px dashed #ffe066;
+}
